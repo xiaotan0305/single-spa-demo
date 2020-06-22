@@ -32,7 +32,7 @@ singleSpa.registerApplication(
 
 singleSpa.registerApplication(
   'layout',
-  () => import('single-spa-layout-app'),
+  () => import('single-spa-layout-app-demo'),
   showExcept(['/login']),
 );
 
@@ -50,7 +50,7 @@ singleSpa.registerApplication(
 
 singleSpa.registerApplication(
   'vue',
-  () => import('single-spa-vue-app'),
+  () => import('single-spa-vue-app-demo'),
   showWhenPrefix(['/vue']),
 );
 

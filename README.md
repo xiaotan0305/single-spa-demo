@@ -17,7 +17,7 @@ You can see a working demo of this application in the next link: [https://single
 
 The login validation is harcoded in code and the credentials are:
 
-| User          | Password      |     
+| User          | Password      |
 | ------------- |:-------------:|
 | admin         | 12345         |
 
@@ -44,7 +44,7 @@ This application is a root-application that inits a single-spa application that 
 - [single-spa-layout-app](https://github.com/jualoppaz/single-spa-layout-app)
 - [single-spa-home-app](https://github.com/jualoppaz/single-spa-home-app)
 - [single-spa-angular-app](https://github.com/jualoppaz/single-spa-angular-app)
-- [single-spa-vue-app](https://github.com/jualoppaz/single-spa-vue-app)
+- [single-spa-vue-app-demo](https://github.com/jualoppaz/single-spa-vue-app-demo)
 - [single-spa-react-app](https://github.com/jualoppaz/single-spa-react-app)
 
 ### <img src="https://vuejs.org/images/logo.png" width="25" height="25"> single-spa-auth-app
@@ -63,7 +63,7 @@ This application is developed with **Angular JS** and is mounted when home icon 
 
 This application is developed with **Angular v8** and is mounted when **Angular** navbar item is clicked. In that case the url will be **/angular** and all **Angular** routes will be managed by **angular router**.
 
-### <img src="https://vuejs.org/images/logo.png" width="25" height="25"> single-spa-vue-app
+### <img src="https://vuejs.org/images/logo.png" width="25" height="25"> single-spa-vue-app-demo
 
 This application is developed with **Vue** and is mounted when **Vue** navbar item is clicked. In that case the url will be **/vue** and all **Vue** routes will be managed by **vue-router**.
 
@@ -136,7 +136,7 @@ There are several files for the right working of this application and they are:
     "single-spa-layout-app": "0.2.4",
     "single-spa-react-app": "0.1.2",
     "single-spa-vue": "1.7.0",
-    "single-spa-vue-app": "0.1.7",
+    "single-spa-vue-app-demo": "0.1.7",
     "vue": "2.6.11",
     "vue-router": "3.1.4",
     "vue-toastr": "2.1.2",
@@ -153,7 +153,7 @@ There are several scripts in this project:
 - **heroku-postbuild**: for compile the application in Heroku inside its custom lifecycle
 - **lint**: for run **eslint** in all project
 
-In **dependencies** config there are several libraries like bootstrap or fontawesome configured as **webpack externals** in dependencies like **single-spa-auth-app** or **single-spa-vue-app**.
+In **dependencies** config there are several libraries like bootstrap or fontawesome configured as **webpack externals** in dependencies like **single-spa-auth-app** or **single-spa-vue-app-demo**.
 
 ### root-application.js
 
@@ -210,7 +210,7 @@ singleSpa.registerApplication(
 
 singleSpa.registerApplication(
   'vue',
-  () => import('single-spa-vue-app'),
+  () => import('single-spa-vue-app-demo'),
   showWhenPrefix(['/vue']),
 );
 
