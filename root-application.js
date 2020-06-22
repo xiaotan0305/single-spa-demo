@@ -61,3 +61,5 @@ singleSpa.registerApplication(
 );
 
 singleSpa.start();
+/* eslint-disable no-undef */
+window.singleSpaNavigate = true;
