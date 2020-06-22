@@ -26,7 +26,7 @@ function showExcept(routes) {
 
 singleSpa.registerApplication(
   'login',
-  () => import('single-spa-auth-app'),
+  () => import('single-spa-auth-app-demo'),
   showWhenAnyOf(['/login']),
 );
 

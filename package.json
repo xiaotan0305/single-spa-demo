@@ -46,7 +46,7 @@
     "bootstrap-vue": "2.2.2",
     "single-spa": "4.4.2",
     "single-spa-angular-app": "0.1.3",
-    "single-spa-auth-app": "0.1.1",
+    "single-spa-auth-app-demo": "0.1.1",
     "single-spa-home-app": "0.1.2",
     "single-spa-layout-app-demo": "0.2.4",
     "single-spa-react-app": "0.1.2",

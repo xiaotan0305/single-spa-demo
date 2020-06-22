@@ -40,14 +40,14 @@ Finally you only have to open [http://localhost:8080](http://localhost:8080) in 
 
 This application is a root-application that inits a single-spa application that integrates several registered applications:
 
-- [single-spa-auth-app](https://github.com/jualoppaz/single-spa-auth-app)
+- [single-spa-auth-app-demo](https://github.com/jualoppaz/single-spa-auth-app-demo)
 - [single-spa-layout-app](https://github.com/jualoppaz/single-spa-layout-app)
 - [single-spa-home-app](https://github.com/jualoppaz/single-spa-home-app)
 - [single-spa-angular-app](https://github.com/jualoppaz/single-spa-angular-app)
 - [single-spa-vue-app-demo](https://github.com/jualoppaz/single-spa-vue-app-demo)
 - [single-spa-react-app](https://github.com/jualoppaz/single-spa-react-app)
 
-### <img src="https://vuejs.org/images/logo.png" width="25" height="25"> single-spa-auth-app
+### <img src="https://vuejs.org/images/logo.png" width="25" height="25"> single-spa-auth-app-demo
 
 This application is displayed by default as there is no logged in user. A login form is printed and the credentials can be set for perform the login and access to the private views.
 
@@ -131,7 +131,7 @@ There are several files for the right working of this application and they are:
     "bootstrap-vue": "2.2.2",
     "single-spa": "4.4.2",
     "single-spa-angular-app": "0.1.3",
-    "single-spa-auth-app": "0.1.1",
+    "single-spa-auth-app-demo": "0.1.1",
     "single-spa-home-app": "0.1.2",
     "single-spa-layout-app": "0.2.4",
     "single-spa-react-app": "0.1.2",
@@ -153,7 +153,7 @@ There are several scripts in this project:
 - **heroku-postbuild**: for compile the application in Heroku inside its custom lifecycle
 - **lint**: for run **eslint** in all project
 
-In **dependencies** config there are several libraries like bootstrap or fontawesome configured as **webpack externals** in dependencies like **single-spa-auth-app** or **single-spa-vue-app-demo**.
+In **dependencies** config there are several libraries like bootstrap or fontawesome configured as **webpack externals** in dependencies like **single-spa-auth-app-demo** or **single-spa-vue-app-demo**.
 
 ### root-application.js
 
@@ -186,7 +186,7 @@ function showExcept(routes) {
 
 singleSpa.registerApplication(
   'login',
-  () => import('single-spa-auth-app'),
+  () => import('single-spa-auth-app-demo'),
   showWhenAnyOf(['/login']),
 );
 
